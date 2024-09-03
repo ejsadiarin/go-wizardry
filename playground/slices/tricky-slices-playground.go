@@ -1,6 +1,8 @@
 package slices
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	a := make([]int, 4)
@@ -21,6 +23,7 @@ func main() {
 	fmt.Printf("a: %v\n b: %v\n", a, b)
 
 	b = append(b, 3)
+
 	b[0] = 3
 
 	// Um... why did append change a?

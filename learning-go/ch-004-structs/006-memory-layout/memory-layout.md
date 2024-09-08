@@ -42,7 +42,9 @@ Notice that Go has "aligned" the fields, meaning that it has added some padding 
 
 To be honest, you should not stress about memory layout.
 
-- However, if you have a specific reason to be concerned about memory usage, aligning the fields by size (largest to smallest) can help. You can also use the reflect package to debug the memory layout of a struct:
+However, if you have a specific reason to be concerned about memory usage, aligning the fields by size (largest to smallest) can help.
+
+- You can also use the reflect package to debug the memory layout of a struct:
 
 ```go
 typ := reflect.TypeOf(stats{})
@@ -52,6 +54,7 @@ fmt.Printf("Struct is %d bytes\n", typ.Size())
 # Real story
 
 I once had a server in production that held a lot of structs in memory. Like hundreds of thousands in a list.
+
 When I re-ordered the fields in the struct, the memory usage of the program dropped by over 2 gigabytes!
 
 It was a huge performance win.

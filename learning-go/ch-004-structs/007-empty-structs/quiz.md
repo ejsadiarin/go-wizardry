@@ -13,4 +13,4 @@ B. struct{}, uint16, bool, int64
 C. struct{}, bool, unint16, int64
 D. bool, struct{}, uint16, int64
 
-Answer:
+Answer: C.

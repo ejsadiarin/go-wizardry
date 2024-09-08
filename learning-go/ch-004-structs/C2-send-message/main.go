@@ -1,6 +1,12 @@
 package structs
 
-// ?
+func (u User) SendMessage(message string, messageLength int) (string, bool) {
+	if messageLength > u.MessageCharLimit {
+		return "", false
+	}
+
+	return message, true
+}
 
 // don't touch below this line
 

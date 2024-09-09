@@ -15,6 +15,10 @@ func (c contractor) getName() string {
 	return c.name
 }
 
+func (c contractor) getSalary() int {
+	return c.hourlyPay * c.hoursPerYear
+}
+
 type fullTime struct {
 	name   string
 	salary int

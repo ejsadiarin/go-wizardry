@@ -10,8 +10,8 @@ In the following example, a "shape" must be able to return its area and perimete
 
 ```go
 type shape interface {
-  area() float64
-  perimeter() float64
+    area() float64
+    perimeter() float64
 }
 
 type rect struct {
@@ -46,7 +46,7 @@ func printShapeData(shapes []shape) {
 }
 ```
 
-Because we say the input is of type `shape,` we know that each element of the slice must implement the `.area()` and `.perimeter()` methods.
+Because we say the input is of type `shape`, we know that each element of the slice must implement the `.area()` and `.perimeter()` methods.
 
 As an example, because [the empty interface](https://go.dev/tour/methods/14) doesn't require a type to have any methods at all, every type automatically implements the empty interface, written as:
 

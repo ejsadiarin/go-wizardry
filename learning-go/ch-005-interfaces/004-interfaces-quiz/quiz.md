@@ -5,7 +5,7 @@ B. inherits
 C. implements
 D. fulfills
 
-Answer: C.
+Answer: A.
 
 # In the example given, the **_???_** type implements the **_???_** interface
 

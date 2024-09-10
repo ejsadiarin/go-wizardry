@@ -1,7 +1,17 @@
 package interfaces
 
 func getExpenseReport(e expense) (string, float64) {
-	// ?
+	v, ok := e.(email)
+	if ok {
+		return v.toAddress, v.cost()
+	}
+
+	s, ok := e.(sms)
+	if ok {
+		return s.toPhoneNumber, s.cost()
+	}
+
+	return "", 0.0
 }
 
 // don't touch below this line

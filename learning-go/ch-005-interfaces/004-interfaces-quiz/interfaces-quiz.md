@@ -6,7 +6,7 @@ Remember, interfaces are collections of method signatures.
 
 ```go
 type shape interface {
-  area() float64
+    area() float64
 }
 ```
 
@@ -16,11 +16,11 @@ If a type in your code implements an area method, with the same signature (e.g. 
 
 ```go
 type circle struct{
-	radius int
+    radius int
 }
 
 func (c *circle) area() float64 {
-  return 3.14 * c.radius * c.radius
+    return 3.14 * c.radius * c.radius
 }
 ```
 

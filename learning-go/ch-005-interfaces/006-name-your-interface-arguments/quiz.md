@@ -3,7 +3,7 @@
 A. Yes
 B. No
 
-Answer:
+Answer: B.
 
 # Why would you name your interface's method's parameters?
 
@@ -11,4 +11,4 @@ A. Readability and clarity
 B. Memory savings
 C. Execution speed
 
-Answer:
+Answer: A.

@@ -1,11 +1,18 @@
-package slices
+package main
 
 import (
 	"fmt"
 )
 
+func eee() {
+}
+
 func main() {
-	a := make([]int, 4)
+	ts := []int{1, 2, 5}
+
+	test := int32(32)
+
+	a := make([]int, len(ts))
 
 	a[0] = 1
 	a[1] = 1

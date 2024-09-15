@@ -13,7 +13,7 @@ func printNumericValue(num interface{}) {
 		fmt.Printf("%T\n", v)
 	default:
 		fmt.Printf("%T\n", v)
-	}
+    }
 }
 
 func main() {

@@ -36,7 +36,9 @@ This is convenient because the HTTP package doesn’t need to know if it’s dea
 
 ## 2. Interfaces Should Have No Knowledge of Satisfying Types
 
-An interface should define what is necessary for other types to classify as a member of that interface. They shouldn’t be aware of any types that happen to satisfy the interface at design time.
+An interface should define what is necessary for other types to classify as a member of that interface.
+
+They shouldn’t be aware of any types that happen to satisfy the interface at design time.
 
 For example, let’s assume we are building an interface to describe the components necessary to define a car.
 
@@ -56,7 +58,9 @@ In order for this pattern to make any amount of sense, we would need a whole lis
 
 - `IsPickup()`, `IsSedan()`, `IsTank()`... where does it end??
 
-Instead, the developer should have relied on the native functionality of type assertion to derive the underlying type when given an instance of the car interface. Or, if a sub-interface is needed, it can be defined as:
+Instead, the developer should have relied on the native functionality of type assertion to derive the underlying type when given an instance of the car interface.
+
+Or, if a sub-interface is needed, it can be defined as:
 
 ```go
 type firetruck interface {

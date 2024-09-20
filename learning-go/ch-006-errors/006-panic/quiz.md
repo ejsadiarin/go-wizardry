@@ -5,7 +5,7 @@ B. when you want to make your code more readable
 C. when you want more control over the error handling
 D. basically never
 
-Answer:
+Answer: C.
 
 # If you want your program to cleanly exit in an unrecoverable way, which is a good alternative to panic?
 
@@ -14,4 +14,4 @@ B. kill()
 C. fmt.Println()
 D. boos.Exit()
 
-Answer:
+Answer: A.

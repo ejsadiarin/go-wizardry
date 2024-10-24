@@ -10,7 +10,7 @@ func eee() {
 func main() {
 	ts := []int{1, 2, 5}
 
-	test := int32(32)
+	// test := int32(32)
 
 	a := make([]int, len(ts))
 

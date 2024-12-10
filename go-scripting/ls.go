@@ -8,14 +8,22 @@ import (
 
 func ls() {
 	// get current path
-	cwd, err := os.Getwd()
-	fmt.Println("Path:", cwd)
-	if err != nil {
-		log.Fatal(err)
+	dir := os.Args[1]
+	if len(os.Args) > 2 && dir != "" {
+		log.Fatal("Cannot have more than 1 arguments.")
 	}
+	if dir == "" {
+		cwd, err := os.Getwd()
+		if err != nil {
+			log.Fatal(err)
+		}
+		dir = cwd
+	}
+	// cwd, err := os.Getwd()
+	fmt.Println("Path:", dir)
 
 	// get current path
-	dirpath, err := os.ReadDir(cwd)
+	dirpath, err := os.ReadDir(dir)
 	if err != nil {
 		log.Fatal(err)
 	}

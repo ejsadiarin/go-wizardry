@@ -1,0 +1,7 @@
+[submodule "go-tcp"]
+    path = ./socket-programming-in-go/go-tcp
+    url = https://github.com/ejsadiarin/go-tcp.git
+
+[submodule "go-udp"]
+    path = ./socket-programming-in-go/go-udp
+    url = https://github.com/ejsadiarin/go-udp.git

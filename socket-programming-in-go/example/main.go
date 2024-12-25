@@ -30,4 +30,13 @@ func main() {
 	defer connection.Close()
 }
 
+/*
+* UPDATE [December 25, 2024 - 7:53 PM]:
+* - created "go-tcp" and "go-udp" repos
+* - critique on this simple demo:
+*   - this is a "client" for a TCP server
+*   - note that the buffer is there only for reading the response of the server
+*   - why defer on end (move it to line 22)
+* */
+
 // ref: https://www.developer.com/languages/intro-socket-programming-go/

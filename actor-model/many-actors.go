@@ -32,11 +32,16 @@ func (a *Actor2) Start(actors map[string]*Actor2) {
 func (a *Actor2) handleMessage2(msg Message2, actors map[string]*Actor2) {
 	fmt.Printf("Actor2 %s received message: %s\n", a.ID, msg.Content)
 
+	fmt.Println("-----------------------------------------")
+	fmt.Printf("Actor2 %s state [a.state]: %s\n", a.ID, a.state)
+	fmt.Printf("Actor2 %s state [actors[\"%s\"].state: %s\n", a.ID, a.ID, actors[a.ID].state)
+	fmt.Println("-----------------------------------------")
+
 	switch msg.Content {
 	case "Process Order":
 		// Update state
 		a.state = "In Progress"
-		fmt.Printf("Actor2 %s updated state to: %s\n", a.ID, a.state)
+		fmt.Printf("[IN handleMessage2] Actor2 %s updated state to: %s\n", a.ID, a.state)
 
 		// Send a message to Actor2 B
 		if actorB, ok := actors["B"]; ok {

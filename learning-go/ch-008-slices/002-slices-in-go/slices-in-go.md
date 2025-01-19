@@ -32,7 +32,8 @@ arrayname[:]
 Where `lowIndex` is inclusive and `highIndex` is exclusive.
 
 `lowIndex`, `highIndex`, or both can be omitted to use the entire array on that side of the colon.
-Assignment
+
+# Assignment
 
 Retries are a premium feature now! Textio's free users only get 1 retry message, while pro members get an unlimited amount.
 
